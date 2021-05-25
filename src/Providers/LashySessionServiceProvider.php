@@ -1,12 +1,12 @@
 <?php
 
-namespace Simtabi\Lashy\pProviders;
+namespace Simtabi\Lashy\Providers;
 
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\ServiceProvider;
 use Simtabi\Lashy\Supports\LashySessionHandler;
 
-class SessionServiceProvider extends ServiceProvider
+class LashySessionServiceProvider extends ServiceProvider
 {
 
     private $driverName = 'lashy';
