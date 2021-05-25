@@ -6,12 +6,10 @@ use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Session\DatabaseSessionHandler as DSH;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Database\ConnectionInterface;
-use Illuminate\Support\Facades\Request;
 use Simtabi\Lashy\Contracts\LashyGuard;
 
 class LashySessionHandler extends DSH
 {
-
 
     /**
      * Create a new database session handler instance.

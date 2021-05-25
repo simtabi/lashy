@@ -19,7 +19,6 @@ class SessionServiceProvider extends ServiceProvider
     public function register()
     {
 
-
         Session::extend($this->driverName, function ($app) {
             $table      = $app['config']['session.table'];
             $lifetime   = $app['config']['session.lifetime'];
@@ -30,6 +29,7 @@ class SessionServiceProvider extends ServiceProvider
         config()->set([
             'session.driver'     => $this->driverName,
         ]);
+
     }
 
     /**
