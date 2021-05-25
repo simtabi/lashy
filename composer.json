@@ -1,0 +1,39 @@
+{
+    "name"              : "simtabi/lashy",
+    "license"           : "MIT",
+    "description"       : "Laravel session helper",
+    "type"              : "package",
+    "keywords": [
+        "helpers",
+        "functions"
+    ],
+    "authors": [
+        {
+            "name": "Imani Manyara",
+            "email": "hello@imanimanyara.com",
+            "homepage": "https://www.imanimanyara.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "ext-gd": "*"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Simtabi\\Lashy\\": "src/"
+        },
+        "files": [
+            "helpers/functions.php"
+        ]
+    },
+
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Simtabi\\Lashy\\Providers\\SessionServiceProvider"
+            ]
+        }
+    }
+}
